@@ -1,5 +1,11 @@
 version: 0.2
 
+env:
+  variables:
+    fname: "<your_fname_value>"
+    lname: "<your_lname_value>"
+    phone: "<your_phone_value>"
+    
 phases:
   install:
     commands:
