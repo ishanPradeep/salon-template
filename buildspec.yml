@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -   # Install Node.js 14.x
+      - sudo apt-get install -y nodejs  # Install Node.js
+      - node -v  # Verify Node.js installation
+      - npm -v   # Verify npm installation
+
+  build:
+    commands:
+      - npm install     # Or run other build commands related to your project
+      - ls -la          # List files and directories to verify the structure
+      - pwd             # Print current working directory
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: .
